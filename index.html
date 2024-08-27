@@ -17,18 +17,12 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       body {
-        align-content: center;
-        align-items: center;
-        background-color: hsl(212, 45%, 89%);
-        display: flex;
-        flex-direction: column;
+        background-color: hsl(212, 45%, 89%); /* slate 300 */
         font-family: 'Outfit', Arial, Helvetica, sans-serif;
         font-size: 15px;
-        justify-content: center;
-        margin-top: 24%;
       }
       h1 {
-        color: hsl(218, 44%, 22%);
+        color: hsl(218, 44%, 22%); /* slate 900 */
         line-height: 26px;
         margin: 0 16px;
         font-size: 22px;
@@ -38,33 +32,30 @@
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(228, 45%, 44%); /* slate 500 */
       }
-      .container {
-        background-color: white;
-        border-radius: 20px;
-        height: 499px;
-        margin-bottom: 10px;
-        text-align: center;
-        width: 320px;
-      }
-      .nowrap {
-        text-wrap: nowrap;
-      }
-      .slate300 {
-        color: hsl(212, 45%, 89%);
-      }
-      .slate500 {
-        color: hsl(216, 15%, 48%);
-      }
-      .slate900 {
-        color: hsl(218, 44%, 22%);
+      .content {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 960px;
+        width: 100%;
       }
       .qr-code {
         height: 288px;
         margin: 16px;
         border-radius: 10px;
         width: 288px;
+      }
+      .qr_container {
+        background-color: white;
+        border-radius: 20px;
+        height: 499px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 320px;
       }
       .qr-text {
         color: hsl(216, 15%, 48%);
@@ -81,19 +72,21 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <img class="qr-code" src="./images/image-qr-code.png"></img>
-      <div class="qr-text">
-        <h1>Improve your front-end<br><span class="nowrap">skills by building projects</span></h1>
-        <p>Scan the QR code to visit
-        Frontend Mentor and take your coding skills to<br>the next level</p>
+    <div class="content">
+      <div class="qr_container">
+        <img class="qr-code" src="./images/image-qr-code.png"></img>
+        <div class="qr-text">
+          <h1>Improve your front-end<br>skills by building projects</h1>
+          <p>Scan the QR code to visit
+          Frontend<br>Mentor and take your coding skills to<br>the next level</p>
+        </div>
       </div>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/brandtrock/fem-qr-code">Brandt J</a>.
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/brandtrock/fem-qr-code">Brandt J</a>.
+      </div>
     </div>
   </body>
 </html>
